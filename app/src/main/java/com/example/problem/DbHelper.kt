@@ -9,7 +9,7 @@ class DBHelper(context: Context?) :
     override fun onCreate(MyDB: SQLiteDatabase) {
         MyDB.execSQL("create table user(username TEXT primary key , password TEXT)")
 
-        InsertData(MyDB, "Mohamed", "2004")
+        InsertData(MyDB, "Mellouki", "12345")
     }
 
     fun InsertData(db: SQLiteDatabase, username: String, password: String): Boolean {
